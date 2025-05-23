@@ -44,7 +44,6 @@ refForm.addEventListener("submit", (e) => {
             function highlightPokemon() {
                 for (let i = 0; i < allH2.length; i++) {
                     if (allH2[i].innerText === pkmn.name) {
-                        console.log(allH2[i]);
                         allH2[i].style.color = "white";
                         allH2[i].style.backgroundColor = "black";
                         return;
@@ -58,6 +57,7 @@ refForm.addEventListener("submit", (e) => {
 
 
         })
+    
 })
 
 

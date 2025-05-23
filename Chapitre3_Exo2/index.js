@@ -4,8 +4,11 @@ const myList = document.querySelector(".myList");
 
 const todoList = document.querySelector("#todoList")
 
+
 form.addEventListener("submit", event => {
     event.preventDefault();
+
+    console.log(e.value);
     let li = document.createElement("li")
     let button = document.createElement("button");
     button.innerText = "Task Done";
@@ -18,6 +21,7 @@ form.addEventListener("submit", event => {
         button.remove();
     })
 })
+
 
 
 

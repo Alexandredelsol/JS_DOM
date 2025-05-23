@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess The Word</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="index.js" defer></script>
+</head>
+<!--Body-->
+<body>
+
+<main>
+    <p class="title">World Scramble</p>
+    <h2 id="gameDisplayH2"></h2>
+    <div class="scoreDisplay">
+    <p>Tries : <span id="nbTries">0</span>/5</p>
+        <div class="lifePoint"></div><div class="lifePoint"></div><div class="lifePoint"></div><div class="lifePoint"></div><div class="lifePoint"></div>
+    <p>Mistakes: <span id="mistakesLetters"></span></p>
+    </div>
+    <div class="allInput">
+        <input type="text" maxlength="1" >
+        <input type="text" maxlength="1" >
+        <input type="text" maxlength="1" >
+        <input type="text" maxlength="1" >
+        <input type="text" maxlength="1" >
+        <input type="text" maxlength="1" >
+    </div>
+    <div class="buttons">
+    <button id="randomButton">Random</button>
+    <button id="resetButton">Reset</button>
+    </div>
+    <dialog id="winDialog">
+        <form method="dialog">
+            <p>You Guess The Word: <em id="winWord"></em></p>
+            <button id="winResetRandom">Try again :)</button>
+        </form>
+    </dialog>
+</main>
+</body>
+</html>

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #d620d6;
+    background: linear-gradient(221deg, rgba(214, 32, 214, 1) 0%, rgba(145, 83, 237, 1) 100%);
+}
+
+.title {
+    font-size: 20px;
+    background: -webkit-linear-gradient(221deg, rgba(214, 32, 214, 1) 0%, rgba(145, 83, 237, 1) 100%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #000000;
+    background: linear-gradient(175deg, rgba(0, 0, 0, 1) 0%, rgba(37, 44, 87, 1) 100%);
+    padding: 50px;
+    margin: 100px auto;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    box-shadow: 1px 1px 7px 3px purple;
+}
+
+h2 {
+    background-color: gray;
+    color: lightgray;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #030616;
+    padding: 10px 70px;
+    margin: 15px;
+    letter-spacing: 10px;
+}
+
+.scoreDisplay {
+    height: 20px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: gray;
+    padding-bottom: 20px;
+
+    z-index: 1;
+}
+
+.scoreDisplay > p {
+
+    font-size: 10px;
+    padding-left: 10px;
+
+}
+
+.lifePoint {
+    height: 8px;
+    width: 8px;
+
+    background: gray;
+    border-radius: 50%;
+    align-self: center;
+    z-index: 2;
+}
+
+#mistakesLetters {
+    color: lightgray;
+}
+
+input {
+    font-size: 20px;
+    text-align: center;
+
+    height: 30px;
+    color: white;
+    width: 30px;
+    border-radius: 10px;
+    border: solid 2px gray;
+    background-color: #232121;
+}
+
+input:focus {
+    font-size: 20px;
+    text-align: center;
+    height: 30px;
+    color: white;
+    width: 30px;
+    border-radius: 10px;
+    border: solid 2px gray;
+    background-color: purple;
+}
+
+button {
+    margin: 20px 5px;
+    color: white;
+    background: #fb03ff;
+    border: solid purple 2px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(251, 3, 255, 1) 0%, rgba(188, 83, 237, 1) 100%);
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 0px #7b248a);
+
+}
+
+button:hover {
+    transition: all 0.3s;
+    font-weight: bold;
+    color: white;
+    background: #fb03ff;
+    border: solid purple 2px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(251, 3, 255, 1) 0%, rgba(188, 83, 237, 1) 100%);
+    padding: 10px 20px;
+    margin: 20px;
+    filter: drop-shadow(0px 0px 0px #7b248a);
+
+}
+
+button:focus {
+
+    background: purple;
+
+}
+
+:modal {
+    background: linear-gradient(175deg, rgba(0, 0, 0, 1) 0%, rgba(37, 44, 87, 1) 100%);
+    border: solid purple 2px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 200px auto;
+    padding: 20px;
+}
